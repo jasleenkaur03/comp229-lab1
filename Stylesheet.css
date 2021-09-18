@@ -1,0 +1,102 @@
+#allPage {
+	margin: 40px auto 40px auto;
+	border: 5px solid #7a7a7a;
+	border-radius: 10px;
+	padding: 20px 10px 10px 10px;
+	box-shadow: 10px 10px 10px rgb(5, 5, 5);
+	width: 600px;
+	background-image:linear-gradient(rgb(215,238,227),white,rgb(215,238,227));
+	text-align: center;
+}
+
+.form-controll {
+	margin: 30px 0;
+	display: flex;
+	justify-content: space-between;
+  }
+  .form-controll > * {
+	width: 50%;
+  }
+  .form-controll > input,
+  .form-controll > select {
+	border: 0;
+	border-bottom: 1px solid;
+	padding-bottom: 10px;
+	background: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+label {
+	width: 400px;
+	float: none;
+	text-align: center;
+	font-weight: bold;
+	font-size: 24px;
+	font-family: "Brush Script MT";
+}
+body {
+	background-size: auto auto;
+	font-family: sans-serif;
+	background-image:linear-gradient(white,rgb(248, 167, 185),white);
+	text-align: center;
+}
+button {
+	text-align: center;
+	font-family: sans-serif;
+	font-size: large;
+	font-weight: bold;
+	
+}
+#convert {
+	text-align: center;
+}
+#button {
+	text-align: center;
+	background-image:linear-gradient(rgb(238, 206, 238), white,rgb(238, 206, 238));
+	transition-duration: 0.4s;
+	cursor: pointer;
+	font-size: x-large;
+	color: #070808;
+}
+#button:hover {
+	background-color:azure;
+	color: #000000;
+}
+
+h3 {
+	text-align: center;
+	font-family: sans-serif;
+	color: #6f4fe4; 
+	
+}
+h2 {
+	text-align: center;
+	font-family: Ink Free;
+	color: Black;
+}
+h1{
+	text-align: center;
+	font-family: Ink Free;
+	color: Black;
+	font-weight: bolder;
+}
+
+#aRight {
+	text-align: right;
+}
+#aLeft {
+	text-align: left;
+}
+}
+::-webkit-input-placeholder {
+   text-align: center;
+}
+input {
+	text-align: center;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+select{
+ padding:5px 0;
+ }

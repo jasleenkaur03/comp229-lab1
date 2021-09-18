@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+	<title>BMR Calculator(Assignment 1)</title>
+	<meta content="COMP125, Assignment 1, BMI Calculator" name="keywords">
+
+<link href="Stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<h1>Calories Calculator</h1>
+<div id="allPage">
+<header>
+	<h2>Insert your data below to calculate your recommended calories intake!</h2>
+	<br>
+	<br>
+</header>
+<main>
+		<button type="button" id="btnMetric" onclick="changeMeasureUnit('metric')">Metric</button>
+		<button type="button" id="btnImperial" onclick="changeMeasureUnit('imperial')">Imperial</button>
+     <br><br>
+<form id="BMRform">
+
+	   <label>Gender:</label><br> 
+			<input type="radio" name="gender" id="genderM"  checked />Male
+			<input type="radio" name="gender" id="genderF"  />Female
+		
+		<br>
+		<br>
+		<div class="form-controll">
+	    <label for="aValue">Age:</label><br> <input id ="aValue" name="Age" tabindex="3" type="text"><br><br>
+		</div>
+	    <div id="metricView">
+			<div class="form-controll">
+			<label>Your Height:</label><br> </th>
+						<label for="cmValue"></label><input id="cmValue" name="centimeter" tabindex="7" type="text" placeholder="centimeter"><br>
+						</div>
+						<div class="form-controll">
+						<label>Your Weight:</label><br><br>
+						<label for="kgValue"></label><input id="kgValue" name="kgValue" tabindex="9" type="text" placeholder="kilogram"><br><br>
+						</div>
+
+		</div>
+		
+	    <div id="imperialView" style="display:none">
+			<div class="form-controll">
+						<label>Your Height:</label><br>
+						<label for="fValue"></label><input id="fValue" name="Feet" tabindex="7" type="text" placeholder="feet"><br>
+						</div>
+						<div class="form-controll">
+						<label for="iValue"></label><input id="iValue" name="Inches"  tabindex="5" type="text"placeholder="inch"><br><br>
+						</div>
+						<div class="form-controll">
+						<label>Your Weight:</label><br>
+						<label for="pValue"></label><input id="pValue" name="Pounds" tabindex="11" type="text" placeholder="pound"><br><br>
+						</div>
+						</div><br>
+
+	        <div class="form-controll">
+            <label for="alvalue"> Activity Level:</label><br> <select id ="alvalue" name="activity" tabindex="13">
+	        <option></option>
+			<option selected="selected">Select your activity level &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </option>
+	        <option value="1.2">Sedentary (little or no exercise) </option>
+	        <option value="1.375">Low activity (Exercise 1-3 timer per week)</option>
+			<option value="1.55">Active (Daily exercise or intense exercise 3-4 times per week)</option>
+			<option value="1.725">High activity (intense exercise 6-7 times per week)</option>
+			<option value="1.9">Very high activity(very intense exercise daily or physical job)</option>
+	        </select><br><br>
+		    </div>
+</form><br><br>
+
+<button type="button" id="button">Calculate BMR</button><br><br>				
+
+<h2> BMR </h2>
+<h3 id="convertb"></h3>
+<h2> Daily Calorie Requirement </h2>
+<h3 id="convertc"></h3>	
+</div>
+
+<script src="JavaScript.js"></script>	
+</div>
+</body>
+</html>
